@@ -6,14 +6,14 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 - Github username: SophiaSophiaY
 - Email: bunnyyan@berkeley.edu
 - Lab section: 107
-- GSI: Dodo
+- GSI: Dodo Qian
 
 -----
 
 ## Assignments
 
 - [Demo](demo)
-- [Workout 1](workout1)
+- [Workout 1](https://github.com/stat133-sp19/hw-stat133-SophiaSophiaY/tree/master/Stat133%20Workout01)
 - Workout 2
 - Workout 3
 
