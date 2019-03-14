@@ -1,0 +1,83 @@
+---
+title: "Stat133-Workout01-Report"
+output: github_document
+author: Sophia Yan
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+#GSW-Shot-Charts
+```{r out.width= '80%', echo=FALSE ,fig.align='center'}
+knitr::include_graphics('../images/gsw-shot-charts.png')
+
+```
+
+# Three Percentile Tables
+```{r}
+dat<-read.csv(file = '../data/shots-data.csv')
+selected_dat = select(dat, player_name, shot_made_flag, shot_type)
+
+effective_general <- arrange(summarise(group_by(selected_dat, player_name), total = n(), made = sum(shot_made_flag == 'shot_yes'), perc_made = made/total), desc(perc_made))
+effective_general
+
+effective_2PT <- arrange(summarise(group_by(selected_dat, player_name), total = sum(shot_type == '2PT Field Goal'), made = sum(shot_made_flag == 'shot_yes'& shot_type == '2PT Field Goal'), perc_made = made/total), desc(perc_made))
+effective_2PT
+
+effective_3PT <- arrange(summarise(group_by(selected_dat, player_name), total = sum(shot_type == '3PT Field Goal'), made = sum(shot_made_flag == 'shot_yes'& shot_type == '3PT Field Goal'), perc_made = made/total), desc(perc_made))
+effective_3PT
+```
+
+
+
+```{r eval=FALSE}
+
+#Introduction: Write a clear and captivating introduction that grabs the reader’s attention. And describe the purpose of the report.
+
+Do you like NBA? Do you enjoy watching NBA games? As a student at University of California, Berkeley, you must be familiar with the Golden State Warrior. Also, Stephen Curry, Kevin Durant, are names that most people in California be familiar with, by default (just kidding). In this report I will use some data and some insights and reflection behind the data to talk a little bit about NBA the game, Golden State Warrior the team, and five famous basketball stars in GSW: Steven Curry, Kevin Durant, Draymond Green, Andre Iguodala, and Klay Thompson. 
+The main purposes of this report are: 1. Try to use data, graphs, and interpretation of data to explain something interesting in our life.  2. As a beginner of R language, be more familiar with the strong power of this language and be more proficient in using this wonderful tool.  3. Have a glance on how big data penetrating in our life, from field to field. 
+
+
+#Organize the content: Organize the content of your report in different sections: e.g. motivation, background, data, analysis, discussion, conclusions, and references.
+
+Motivation is the same as above:  1. Try to use data, graphs, and interpretation of data to explain something interesting in our life.  2. As a beginner of R language, be more familiar with the strong power of this language and be more proficient in using this wonderful tool.  3. Have a glance on how big data penetrating in our life, from field to field. 
+
+Background: After Steve Kerr become the coach of GSW team started from 2014, the GSW team become one of the greatest legend in NBA history. In this report I will illustrate some fun facts/reflection of this team. 
+
+Analysis: 
+From the images in the file we may conclude that:
+Curry, Green, and Iguodala likes shooting the basketball at the center of the semi-circle or at the bottom line of the semi-circle, while Durant and Thompson are more “everywhere shooter”
+Thompson is the best 3PT-shooter while Iguodala is the best 2PT-shooter. Unfortunately, Green is the worst in both
+All players except Green have a total rank of 5 (rank 2pt + rank 3pt), but Curry is the one with most shoots.
+
+Future interesting topics to explore:
+Players’ performance when facing different opponent
+Who is the strongest player
+Who is the one more likely to “kill the game” (score a goal at the nearly end of the game)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
