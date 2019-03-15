@@ -75,25 +75,35 @@ effective_3PT
     ## 5 Graymond Green   232    74     0.319
 
 ``` r
-#Introduction: Write a clear and captivating introduction that grabs the reader’s attention. And describe the purpose of the report.
+####Introduction: Write a clear and captivating introduction that grabs the reader’s attention. And describe the purpose of the report.
 
-Do you like NBA? Do you enjoy watching NBA games? As a student at University of California, Berkeley, you must be familiar with the Golden State Warrior. Also, Stephen Curry, Kevin Durant, are names that most people in California be familiar with, by default (just kidding). In this report I will use some data and some insights and reflection behind the data to talk a little bit about NBA the game, Golden State Warrior the team, and five famous basketball stars in GSW: Steven Curry, Kevin Durant, Draymond Green, Andre Iguodala, and Klay Thompson. 
+Do you like NBA? Do you enjoy watching NBA games? As a student at University of California, Berkeley, you must be familiar with the Golden State Warrior. Also, Stephen Curry, Kevin Durant, Thompson, Green,  are names that most people in California be familiar with, by default (just kidding). In this report I will use some data and some insights and reflection behind the data to talk a little bit about NBA the game, Golden State Warrior the team, and five famous basketball stars in GSW: Steven Curry, Kevin Durant, Draymond Green, Andre Iguodala, and Klay Thompson. 
 The main purposes of this report are: 1. Try to use data, graphs, and interpretation of data to explain something interesting in our life.  2. As a beginner of R language, be more familiar with the strong power of this language and be more proficient in using this wonderful tool.  3. Have a glance on how big data penetrating in our life, from field to field. 
 
 
-#Organize the content: Organize the content of your report in different sections: e.g. motivation, background, data, analysis, discussion, conclusions, and references.
+####Organize the content: Organize the content of your report in different sections: e.g. motivation, background, data, analysis, discussion, conclusions, and references.
 
-Motivation is the same as above:  1. Try to use data, graphs, and interpretation of data to explain something interesting in our life.  2. As a beginner of R language, be more familiar with the strong power of this language and be more proficient in using this wonderful tool.  3. Have a glance on how big data penetrating in our life, from field to field. 
+**Motivation**:  1. Try to use data, graphs, and interpretation of data to explain something interesting in our life.  2. As a beginner of R language, be more familiar with the strong power of this language and be more proficient in using this wonderful tool.  3. Have a glance on how big data penetrating in our life, from field to field. 
 
-Background: After Steve Kerr become the coach of GSW team started from 2014, the GSW team become one of the greatest legend in NBA history. In this report I will illustrate some fun facts/reflection of this team. 
+**Background**: After Steve Kerr become the coach of GSW team started from 2014, the GSW team become one of the greatest legend in NBA history. In this report I will illustrate some fun facts/reflection of this team. 
 
-Analysis: 
+
+####Analysis: 
 From the images in the file we may conclude that:
-Curry, Green, and Iguodala likes shooting the basketball at the center of the semi-circle or at the bottom line of the semi-circle, while Durant and Thompson are more “everywhere shooter”
-Thompson is the best 3PT-shooter while Iguodala is the best 2PT-shooter. Unfortunately, Green is the worst in both
-All players except Green have a total rank of 5 (rank 2pt + rank 3pt), but Curry is the one with most shoots.
+1. Curry, Green, and Iguodala likes shooting the basketball at the center of the semi-circle or at the bottom line of the semi-circle, while Durant and Thompson are more “everywhere shooter”
+2. Thompson is the best 3PT-shooter. Iguodala is the best 2PT-shooter. Unfortunately, Green is the worst in both
+All players except Green have a total rank of 5 (rank 2pt + rank 3pt), but Curry is the one with most shoots, so over all he has the highest hit rate.
+3. **Here is the most essential part of my analysis**  I am not a basketball fan, so the data confuse me a little. I know Green is one of the most important player in this team and named as one of the "the BIG Four", but just from the data I have no idea why does he deserve such complement. Therefore, I asked my friend M who is a super fan of NBA about this, and here is the keytakeaway: 
+-(1). Green is a great defender. However, the data only shows the hit-rate, which indicates the players ability as a point guard or shooting guard. 
+-(2). Green has outstanding leadership. He knows how to inspire his teammates as well as deter his opponent. That is kind of a "soft skill" in the game. I learn from this case that, in individual sport competition, the score/number(which is data) is the only standard of ranking athletes. However, in team competition such as basketball, there are a lot of "soft skill" that have huge impact on the team performance but can hardly been "datafied" (tranlated into data). Data is objective, but sometimes it cannot reflect the whole thing as it is. 
+-(3). When making conclusion from data, we should keep in mind to check that: A. if this data only reflect certain aspects of the whole group, but there is something important that been ignored.  B. if there is some factors that might influence our conclusion, but can not be transform into data.
 
-Future interesting topics to explore:
+
+####Conclusion:
+GSW is one of the best basketball team ever in the history. With data, data computation, and data analysis skill, we can discover a lot of interesting facts. As for the basketball team, this data and conclusions are really useful for them technically. Data and data analysis change the way people think and people work a lot, and they are so powerful. However, sometimes data can not reflect everything in real world. In order to make the most precise conclusions (such as in the case of Green), as analyst we should keep rational perspectives towards data analysis, and figure out what has been ignored by data. This also provide strong evidence that AI cannot rule the world (at least up to now).  
+
+
+####Interesting topics to explore in the future:
 Players’ performance when facing different opponent
 Who is the strongest player
 Who is the one more likely to “kill the game” (score a goal at the nearly end of the game)
